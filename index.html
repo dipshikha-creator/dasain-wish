@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>दशैंको शुभकामना ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #800020, #ff9966);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  background: #fff8ed;
+  color: #8b1427;
+  padding: 25px;
+  border-radius: 25px;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px #0005;
+}
+
+.gift {
+  font-size: 100px;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  50% { transform: translateY(-10px); }
+}
+
+button {
+  background: #b20d2c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 22px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#wish {
+  display: none;
+}
+
+#wish.show {
+  display: block;
+  animation: pop 0.8s ease;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+
+  <div id="start">
+    <h1>दशैंको यो सानो मायाको कोसेली ❤️🎁</h1>
+    <p>मनैदेखि...</p>
+
+    <div class="gift" onclick="openGift()">🎁</div>
+
+    <p>तपाईंको उपहार खोल्नुहोस् ❤️</p>
+    <button onclick="openGift()">उपहार खोल्नुहोस् 🎀</button>
+  </div>
+
+  <div id="wish">
+    <h1>🌺 शुभ विजयादशमी 🌺</h1>
+    <h2>मनैदेखि दशैंको शुभकामना ❤️🙏❤️</h2>
+
+    <p>
+    यो दशैंले सबैको जीवनमा नयाँ आशा, नयाँ खुसी र अनगिन्ती सुन्दर पलहरू लिएर आओस्। 🙏✨
+    </p>
+
+    <p>
+     कोही आज आफ्नो परिवारसँगै बसेर दशैं मनाउँदै हुनुहुन्छ, त कोही आफ्नो परिवारबाट टाढा सात समुद्रपारि बसेर घरको सम्झनामा हुनुहुन्छ। 🥹❤️
+
+टाढा भए पनि मन सधैँ आफ्नै परिवारको वरिपरि हुन्छ। आफ्ना मान्छेहरू नजिक हुँदा होस् या हजारौँ माइल टाढा, माया कहिल्यै दूरीले घटाउँदैन। 
+❤️यो दशैंले टाढा भएका मनहरूलाई नजिक बनाओस्, हरेक परिवारमा सुख, शान्ति, स्वास्थ्य र खुसी छाओस्। 
+सबैका अधुरा सपना पूरा होऊन् र हरेक घरमा मायाको उज्यालो छाओस्। 🙏🌺
+सबैका आँखामा खुसी होस्, मनमा शान्ति होस्, परिवारमा प्रेम होस् र हरेक घरमा सुख-समृद्धि छाओस्। टाढा भएका परिवारहरू छिट्टै भेटिन पाऊन् र सबैका मीठा सपनाहरू पूरा होऊन्। 💗🫂
+
+दूरी जति नै टाढा भए पनि, मन जोड्ने माया सधैँ नजिक रहोस्। ❤️
+
+सबैमा मनैदेखि बडादशैंको धेरै धेरै शुभकामना! 🌺🙏💖
+
+    </p>
+
+    <p>
+      दुर्गा भवानीले सबैको रक्षा गरून्
+      र हरेक सपना पूरा होऊन्। 🙏
+    </p>
+
+    <h2>❤️ शुभ दशैं ❤️</h2>
+    <div>💖 💝 💗 💖 💝</div>
+  </div>
+
+</div>
+
+<script>
+function openGift() {
+  document.getElementById("start").style.display = "none";
+  document.getElementById("wish").classList.add("show");
+}
+</script>
+</body>
+</html>
